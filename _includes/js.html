@@ -12,9 +12,9 @@
   if ((!window.location.host.startsWith("localhost")) && (window.location.protocol != "https:"))
     window.location = window.location.toString().replace(/^http:/, "https:");
 </script>
-
-   <script type="text/javascript">
-                  $(document).ready(function() {
-                      $('#toc').toc();
-                  });
-    </script>
+<script type="text/javascript">
+  // 生成目录。
+  $(document).ready(function() {
+    $('#toc').toc();
+  });
+</script>
