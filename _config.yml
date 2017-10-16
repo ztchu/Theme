@@ -1,0 +1,54 @@
+title: iip-easi
+description: Windows 10 Developer
+author: iip-easi
+post_author: iip-easi
+logo: /Theme/static/img/avatar.png
+github: https://github.com/iip-easi
+about: Windows 10 Developer
+mail: walterlv@outlook.com
+
+baseurl: "/Theme"
+url: "https://iip-easi.github.io"
+
+allowsearch: true
+
+analytics:
+  google: UA-108101550-1
+disqus:
+  name: lindexi
+
+share:
+  twitter_username: lindexi_gd
+
+
+enableTags: true
+tagarray: []
+
+excerpt_separator: "<!--more-->"
+paginate: 15
+per_page: 15
+paginate_path: "/blog/page:num/"
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-gist]
+
+# Content Collection
+collections:
+  articles:
+    output: true
+
+# Content Template
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "iip-easi"
+      permalink: "/post/:title.html"
+  - scope:
+      path: "_articles"
+      type: "articles"
+    values:
+      layout: "post"
+      author: "iip-easi"
+      permalink: "/article/:title.html"
